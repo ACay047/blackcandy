@@ -3,9 +3,9 @@
 require "test_helper"
 
 class LibrariesControllerTest < ActionDispatch::IntegrationTest
-  test "should show library" do
+  test "should get show" do
     login
-    get library_path
+    get library_url
 
     assert_response :success
   end
